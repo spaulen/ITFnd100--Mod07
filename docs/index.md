@@ -32,8 +32,8 @@ Figure 1  AlpineSki.txt File Content
 This is an alpine ski trip packing list. This file will be “pickled” (serialized) into a binary file called: AlpineSki_Pickled.txt when the following method is called from class Processor in the file AlpineSkiing.py:
 
 Figure 2  pickle_to_file method  
-<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure%202.png alt="Figure 2  pickle_to_file method" height="100"/>  
- 
+<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure2.png alt="Figure 2  pickle_to_file method" height="100"/>  
+  
 Note that the code uses the pickle function dump to save the list (previously read from AlpineSki.txt) to a file.  
 
 This code is chosen by the user by selecting 1 from the menu of options per the code below.  Note that the arguments lstTable and strPickledFileName (hardcoded to “AlpineSki_Pickled.txt”) are passed to pickle_to_file as the parameters list_of_rows and file_name.
