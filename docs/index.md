@@ -1,9 +1,5 @@
-** SPaulen
-December 1, 2020
-IT FDN 110 A
-Assignment 07
-GitHub: 
-GitHub WebPage: 
+**Dev:** *SPaulen*  
+**Date:** *12.01.2020*
 
 # Python Pickling Module & Error Handling
 
@@ -13,11 +9,11 @@ The two features introduced this week provide ways to make our Python code more 
 ## Pickle Module
 Using the Pickle Module in Python requires importing Pickle via the command: import Pickle.  This module contains functions to change an object to binary format as well as unpack a binary object to text. 
 
-Some good websites to read about Pickling and Serialization are:
-•	Don’t Fear the Pickle: Using pickle.dump and pickle.load | by Manu Kalia | Better Programming | Medium
-•	The Python pickle Module: How to Persist Objects in Python – Real Python
-•	Understanding Python Pickling with example - GeeksforGeeks
-•	Serialization - Wikipedia
+Some good websites to read about Pickling and Serialization are:  
+https://medium.com/better-programming/dont-fear-the-pickle-using-pickle-dump-and-pickle-load-5212f23dbbce
+https://realpython.com/python-pickle-module/#:~:text=%20The%20Python%20pickle%20module%20basically%20consists%20of,%28bytes_object%2C%20%208%20%2C%20fix_imports%3DTrue%2C%20encoding%3D%22ASCII%22%2C...%20More%20
+• Understanding Python Pickling with example - GeeksforGeeks
+• Serialization - Wikipedia
 
 Serialization is most often used to:
 1.	Detect changes in data over time
@@ -97,16 +93,16 @@ Error Handling is essential in every program but most especially in programs whe
 The Pickle Module can be useful for serialization and deserialization within a program.  However, it has security issues so should be used only for internal program purposes and not for deserialization of external binary files. 
 
 ### Appendix A - Python Code
-# ---------------------------------------------------------------------------- #
-# Title: An Alpine Skiing Packing List
-# Description: Demonstration of Pickling and Exception Handling
-# ChangeLog: (Who,When,What):
-# SPaulen, 12/01/2020, Created
-# ---------------------------------------------------------------------------- #
-# Import Pickle Module
+`# ---------------------------------------------------------------------------- #
+`# Title: An Alpine Skiing Packing List
+`# Description: Demonstration of Pickling and Exception Handling
+`# ChangeLog: (Who,When,What):
+`# SPaulen, 12/01/2020, Created
+`# ---------------------------------------------------------------------------- #
+`# Import Pickle Module
 import pickle
 
-# Declare Variables and Classes
+#` Declare Variables and Classes
 strFileName = "AlpineSki.txt" # The name of the text data file
 strPickledFileName = "AlpineSki_Pickled.txt" # The name of the binary data file
 lstTable = [] # A list that acts as a 'table' of rows
@@ -114,13 +110,13 @@ intChoice = 0 # Captures the user option selection
 strStatus = "" # Captures the status of an processing functions
 
 
-# Exception
+`# Exception
 class InvalidChoice(Exception):
     def __str__(self):
         return 'Please enter  1, 2 or 3' + "\n"
 
 
-# Processing
+`# Processing
 class Processor:
     @staticmethod
     def read_data_from_file(file_name, list_of_rows):
@@ -193,4 +189,4 @@ while True:
     except Exception as e:
         print("The Python error message is: ")
         print(e, "\n")
-
+	`
