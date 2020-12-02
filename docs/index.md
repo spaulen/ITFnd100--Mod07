@@ -52,7 +52,7 @@ Figure 5 AlpineSki_Pickled.txt Contents
 ### Part 2: Pickle Load
 Any pickled (serialized) file can be unpickled (deserialized) to a list when the following method is called from the class Processor in the file AlpineSkiing.py:  
 Figure 6  unpickled_from_file method  
-<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure6.png alt="Figure 6  unpickled_from_file method" height="100"/>  
+<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure6.png alt="Figure 6  unpickled_from_file method" height="150"/>  
   
 Note that the code uses the pickle function load to save to a list.  
 This code is chosen by the user by selecting 2 from the menu of options per the code below.  Note that the arguments lstTable and strPickledFileName (hardcoded to “AlpineSki_Pickled.txt”) are passed to unpickled_from_file as the parameters list_of_rows and file_name.  
@@ -61,7 +61,7 @@ Figure 7 Code Executed If User Chooses Option 2 (Unpickle)
   
 When the program runs, selecting 2 returns this result:  
 Figure 8 User Chooses Option 2 (UnPickle)  
-<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure8.png alt="Figure 8 User Chooses Option 2 (UnPickle)" height="100"/>  
+<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure8.png alt="Figure 8 User Chooses Option 2 (UnPickle)" height="300"/>  
   
 ## Error Handling   
 Error Handling in Python can be grouped into the following 4 categories:  
@@ -82,11 +82,11 @@ Figure 9 Custom Exception
   
 c. Note that the except clause invokes the Exception parent which incorporates the custom exception message returned from InvalidChoice as “e”.  
 Figure 10 Except Clause Invoking Exception Parent  
-<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure11.png alt="Figure 10 Except Clause Invoking Exception Parent" height="100"/>  
+<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure11.PNG alt="Figure 10 Except Clause Invoking Exception Parent" height="150"/>  
   
 Run Time Error Handling in AlpineSki.py:  
 Figure 11 Run-Time Error Handling of an Invalid Option  
-<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure10.png alt="Figure 11 Run-Time Error Handling of an Invalid Option" height="100"/>  
+<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure10.png alt="Figure 11 Run-Time Error Handling of an Invalid Option" height="300"/>  
   
 Some good websites to read about Python Exception Handling are:  
 • <https://www.techbeamers.com/python-exception-handling/>  
@@ -100,13 +100,13 @@ Error Handling is essential in every program but most especially in programs whe
 The Pickle Module can be useful for serialization and deserialization within a program.  However, it has security issues so should be used only for internal program purposes and not for deserialization of external binary files.  
   
 ### Appendix A - Python Code
-` # ---------------------------------------------------------------------------- #  
-` # Title: An Alpine Skiing Packing List  
-` # Description: Demonstration of Pickling and Exception Handling  
-` # ChangeLog: (Who,When,What):  
-` # SPaulen, 12/01/2020, Created  
-` # ---------------------------------------------------------------------------- #  
-` # Import Pickle Module  
+`# ---------------------------------------------------------------------------- #  `
+`# Title: An Alpine Skiing Packing List  `
+`# Description: Demonstration of Pickling and Exception Handling  `
+`# ChangeLog: (Who,When,What):  `
+`# SPaulen, 12/01/2020, Created  `
+`# ---------------------------------------------------------------------------- #  `
+`# Import Pickle Module  
  import pickle  
 `  
 `# Declare Variables and Classes  
