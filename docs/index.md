@@ -12,7 +12,7 @@ Using the Pickle Module in Python requires importing Pickle via the command: imp
 
 Some good websites to read about Pickling and Serialization are:  
 * <https://medium.com/better-programming/dont-fear-the-pickle-using-pickle-dump-and-pickle-load-5212f23dbbce>
-* <https://realpython.com/python-pickle-module/#:~:text=%20The%20Python%20pickle%20module%20basically%20consists%20of,%28bytes_object%2C%20%208%20%2C%20fix_imports%3DTrue%2C%20encoding%3D%22ASCII%22%2C...%20More%20>
+* <https://pythontic.com/language/exception%20handling/introduction>
 * <https://www.geeksforgeeks.org/understanding-python-pickling-example/>
 * <https://en.wikipedia.org/wiki/Serialization>
 
@@ -90,7 +90,7 @@ Figure 11 Run-Time Error Handling of an Invalid Option
   
 Some good websites to read about Python Exception Handling are:  
 • <https://www.techbeamers.com/python-exception-handling/>  
-• <https://pythontic.com/language/exception handling/introduction#:~:text=Exception%20Handling%20in%20Python%3A%201%20Python%20has%20built-in,code%20for%20handling%20the%20exception.%20More%20items...%20>  
+• <https://pythontic.com/language/exception handling/introduction>  
 • <https://www.tutorialspoint.com/python/python_exceptions.htm>  
 • <https://docs.python.org/3/library/exceptions.html>  
   
@@ -100,80 +100,78 @@ Error Handling is essential in every program but most especially in programs whe
 The Pickle Module can be useful for serialization and deserialization within a program.  However, it has security issues so should be used only for internal program purposes and not for deserialization of external binary files.  
   
 ### Appendix A - Python Code
-`# ---------------------------------------------------------------------------- #  `
-`# Title: An Alpine Skiing Packing List  `
-`# Description: Demonstration of Pickling and Exception Handling  `
-`# ChangeLog: (Who,When,What):  `
-`# SPaulen, 12/01/2020, Created  `
-`# ---------------------------------------------------------------------------- #  `
-`# Import Pickle Module  
- import pickle  
-`  
-`# Declare Variables and Classes  
- strFileName = "AlpineSki.txt" # The name of the text data file  
- strPickledFileName = "AlpineSki_Pickled.txt" # The name of the binary data file  
- lstTable = [] # A list that acts as a 'table' of rows  
- intChoice = 0 # Captures the user option selection  
- strStatus = "" # Captures the status of an processing functions  
+
+```# Title: An Alpine Skiing Packing List  
+# Description: Demonstration of Pickling and Exception Handling  
+# ChangeLog: (Who,When,What):  
+# SPaulen, 12/01/2020, Created  
+# Import Pickle Module  
+import pickle  
+ 
+# Declare Variables and Classes  
+strFileName = "AlpineSki.txt" # The name of the text data file  
+strPickledFileName = "AlpineSki_Pickled.txt" # The name of the binary data file  
+lstTable = [] # A list that acts as a 'table' of rows  
+intChoice = 0 # Captures the user option selection  
+strStatus = "" # Captures the status of an processing functions  
   
-`  
-` # Exception  
- class InvalidChoice(Exception):  
-     def __str__(self):  
-        return 'Please enter  1, 2 or 3' + "\n"  
+  
+# Exception  
+class InvalidChoice(Exception):  
+    def __str__(self):  
+       return 'Please enter  1, 2 or 3' + "\n"  
 
-`
-`# Processing  
- class Processor:  
-     @staticmethod  
-     def read_data_from_file(file_name, list_of_rows):  
-         list_of_rows.clear()  # clear current data  
-         try:  
-             file = open(file_name, "r")  
-             for row in file:  
-                 if "\n" in row:  
-                     row = row.replace("\n", " ")  
-                 list_of_rows.append(row)  
-             file.close()  
-             return list_of_rows, "Success"  
-         except:  
-             return None, "Success"  
 
-     @staticmethod  
-     def pickle_to_file(list_of_rows, file_name):  
-         file = open(file_name, 'wb')  
-         pickle.dump(list_of_rows, file)  
-         file.close()  
-         return list_of_rows, "Success"  
+# Processing  
+class Processor:  
+    @staticmethod  
+    def read_data_from_file(file_name, list_of_rows):  
+        list_of_rows.clear()  # clear current data  
+        try:  
+            file = open(file_name, "r")  
+            for row in file:  
+                if "\n" in row:  
+                    row = row.replace("\n", " ")  
+                list_of_rows.append(row)  
+            file.close()  
+            return list_of_rows, "Success"  
+        except:  
+            return None, "Success"  
 
+    @staticmethod  
+    def pickle_to_file(list_of_rows, file_name):  
+        file = open(file_name, 'wb')  
+        pickle.dump(list_of_rows, file)  
+        file.close()  
+        return list_of_rows, "Success"  
      @staticmethod  
      def unpickled_from_file(list_of_rows, file_name):  
-         file = open(file_name, "rb")  
-         list_of_rows = pickle.load(file)  
-         file.close()  
-         return list_of_rows, "Success"  
+        file = open(file_name, "rb")  
+        list_of_rows = pickle.load(file)  
+        file.close()  
+        return list_of_rows, "Success"  
+ 
   
-`  
-` # Presentation  
- class Presentation:  
-     @staticmethod  
-     def print_data_from_file(list_of_rows):  
-         print("******* Alpine Ski Packing List *******")  
-         for row in list_of_rows:  
-             print(row)  
-         print("*******+++++++++++++++++++++++++*******")  
+# Presentation  
+class Presentation:  
+    @staticmethod  
+    def print_data_from_file(list_of_rows):  
+        print("******* Alpine Ski Packing List *******")  
+        for row in list_of_rows:  
+            print(row)  
+        print("*******+++++++++++++++++++++++++*******")  
   
-     @staticmethod  
-     def print_menu_tasks():  
-         print('''  
-         Menu of Options  
-         1) Pickle  
-         2) UnPickle  
-         3) Exit Program  
-         ''')  
-  
-`
-`# Main Body  
+    @staticmethod  
+    def print_menu_tasks():  
+        print('''  
+        Menu of Options  
+        1) Pickle  
+        2) UnPickle  
+        3) Exit Program  
+        ''')  
+ 
+
+# Main Body  
 while True:  
     try:  
         Presentation.print_menu_tasks()  
@@ -196,4 +194,4 @@ while True:
     except Exception as e:  
         print("The Python error message is: ")  
         print(e, "\n")  
-`  
+  
