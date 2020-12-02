@@ -26,15 +26,18 @@ Serialization is most often used to:
 For this assignment, I created a text file called AlpineSki.txt.  
 The text file appears like this:
 
-!Figure 1  AlpineSki.txt File Contents]<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/FIgure1.PNG alt="Figure 1  AlpineSki.txt File Contents" height="300"/>
+Figure 1  AlpineSki.txt File Content  
+<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/FIgure1.PNG alt="Figure 1  AlpineSki.txt File Contents" height="200"/>  
   
 This is an alpine ski trip packing list. This file will be “pickled” (serialized) into a binary file called: AlpineSki_Pickled.txt when the following method is called from class Processor in the file AlpineSkiing.py:
 
 Figure 2  pickle_to_file method  
-![Figure 2  pickle_to_file method](https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure%202.png "Figure 2  pickle_to_file method")
+<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure%202.png alt="Figure 2  pickle_to_file method" height="100"/>  
  
-Note that the code uses the pickle function dump to save the list (previously read from AlpineSki.txt) to a file.
+Note that the code uses the pickle function dump to save the list (previously read from AlpineSki.txt) to a file.  
+
 This code is chosen by the user by selecting 1 from the menu of options per the code below.  Note that the arguments lstTable and strPickledFileName (hardcoded to “AlpineSki_Pickled.txt”) are passed to pickle_to_file as the parameters list_of_rows and file_name.
+
 Figure 3 Code Executed If User Chooses Option 1 (Pickle)
  
 When the program runs, selecting 1 returns this result:
