@@ -38,14 +38,17 @@ Note that the code uses the pickle function dump to save the list (previously re
 
 This code is chosen by the user by selecting 1 from the menu of options per the code below.  Note that the arguments lstTable and strPickledFileName (hardcoded to “AlpineSki_Pickled.txt”) are passed to pickle_to_file as the parameters list_of_rows and file_name.
 
-Figure 3 Code Executed If User Chooses Option 1 (Pickle)
- 
-When the program runs, selecting 1 returns this result:
-Figure 4 User Chooses Option 1 (Pickle)
- 
-The contents of the Pickled File “AlpineSki_Pickled.txt” are:
-Figure 5 AlpineSki_Pickled.txt Contents
- 
+Figure 3 Code Executed If User Chooses Option 1 (Pickle)  
+<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure3.png alt="Figure 3  Code Executed If User Chooses Option 1 (Pickle)" height="70"/>  
+  
+When the program runs, selecting 1 returns this result:  
+Figure 4 User Chooses Option 1 (Pickle)  
+<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure4.png alt="Figure 4 User Chooses Option 1 (Pickle)" height="300"/>  
+  
+The contents of the Pickled File “AlpineSki_Pickled.txt” are:  
+Figure 5 AlpineSki_Pickled.txt Contents  
+<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure5.png alt="Figure 5 AlpineSki_Pickled.txt Contents" height="100"/>  
+  
 ### Part 2: Pickle Load
 Any pickled (serialized) file can be unpickled (deserialized) to a list when the following method is called from the class Processor in the file AlpineSkiing.py:
 Figure 6  unpickled_from_file method
