@@ -90,7 +90,7 @@ Figure 11 Run-Time Error Handling of an Invalid Option
   
 Some good websites to read about Python Exception Handling are:  
 • <https://www.techbeamers.com/python-exception-handling/>  
-• <https://pythontic.com/language/exception handling/introduction>  
+• <https://pythontic.com/language/exception%20handling/introduction>  
 • <https://www.tutorialspoint.com/python/python_exceptions.htm>  
 • <https://docs.python.org/3/library/exceptions.html>  
   
