@@ -26,8 +26,7 @@ Serialization is most often used to:
 For this assignment, I created a text file called AlpineSki.txt.  
 The text file appears like this:
 
-Figure 1  AlpineSki.txt File Contents  
-<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/Figure%201.png alt="Figure 1  AlpineSki.txt File Contents" height="300"/>
+!Figure 1  AlpineSki.txt File Contents]<img src=https://github.com/spaulen/ITFnd100--Mod07/blob/main/docs/FIgure1.PNG alt="Figure 1  AlpineSki.txt File Contents" height="300"/>
   
 This is an alpine ski trip packing list. This file will be “pickled” (serialized) into a binary file called: AlpineSki_Pickled.txt when the following method is called from class Processor in the file AlpineSkiing.py:
 
