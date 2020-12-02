@@ -10,16 +10,16 @@ The two features introduced this week provide ways to make our Python code more 
 Using the Pickle Module in Python requires importing Pickle via the command: import Pickle.  This module contains functions to change an object to binary format as well as unpack a binary object to text. 
 
 Some good websites to read about Pickling and Serialization are:  
-https://medium.com/better-programming/dont-fear-the-pickle-using-pickle-dump-and-pickle-load-5212f23dbbce
-https://realpython.com/python-pickle-module/#:~:text=%20The%20Python%20pickle%20module%20basically%20consists%20of,%28bytes_object%2C%20%208%20%2C%20fix_imports%3DTrue%2C%20encoding%3D%22ASCII%22%2C...%20More%20
-• Understanding Python Pickling with example - GeeksforGeeks
-• Serialization - Wikipedia
+* <https://medium.com/better-programming/dont-fear-the-pickle-using-pickle-dump-and-pickle-load-5212f23dbbce>
+* <https://realpython.com/python-pickle-module/#:~:text=%20The%20Python%20pickle%20module%20basically%20consists%20of,%28bytes_object%2C%20%208%20%2C%20fix_imports%3DTrue%2C%20encoding%3D%22ASCII%22%2C...%20More%20>
+* <https://www.geeksforgeeks.org/understanding-python-pickling-example/>
+* <https://en.wikipedia.org/wiki/Serialization>
 
 Serialization is most often used to:
-1.	Detect changes in data over time
-2.	Transfer data 
-3.	Store data 
-4.	Distribute objects
+1. Detect changes in data over time
+2. Transfer data 
+3. Store data 
+4. Distribute objects
 
 ### Part 1: Pickle Dump 
 For this assignment, I created a text file called AlpineSki.txt.  The text file appears like this:
@@ -93,16 +93,16 @@ Error Handling is essential in every program but most especially in programs whe
 The Pickle Module can be useful for serialization and deserialization within a program.  However, it has security issues so should be used only for internal program purposes and not for deserialization of external binary files. 
 
 ### Appendix A - Python Code
-`# ---------------------------------------------------------------------------- #
-`# Title: An Alpine Skiing Packing List
-`# Description: Demonstration of Pickling and Exception Handling
-`# ChangeLog: (Who,When,What):
-`# SPaulen, 12/01/2020, Created
-`# ---------------------------------------------------------------------------- #
-`# Import Pickle Module
-import pickle
+` # ---------------------------------------------------------------------------- #  
+` # Title: An Alpine Skiing Packing List  
+` # Description: Demonstration of Pickling and Exception Handling  
+` # ChangeLog: (Who,When,What):  
+` # SPaulen, 12/01/2020, Created  
+` # ---------------------------------------------------------------------------- #  
+` # Import Pickle Module  
+` import pickle  
 
-#` Declare Variables and Classes
+# Declare Variables and Classes
 strFileName = "AlpineSki.txt" # The name of the text data file
 strPickledFileName = "AlpineSki_Pickled.txt" # The name of the binary data file
 lstTable = [] # A list that acts as a 'table' of rows
